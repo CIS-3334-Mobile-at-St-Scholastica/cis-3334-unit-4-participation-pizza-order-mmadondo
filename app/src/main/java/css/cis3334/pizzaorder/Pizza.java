@@ -20,6 +20,7 @@ public class Pizza {
         this.topping = topping;
         this.size = size;
         this.extraCheese = extraCheese;
+
         if (size==pizzaSize.SMALL) {
             price = SMALL_PRICE;
             description = "Small " + topping + " pizza";
@@ -39,7 +40,6 @@ public class Pizza {
     public Double getPrice() {
         return price;
     }
-
     public String toString() {
         return description;
     }

@@ -41,36 +41,40 @@
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner" />
+        android:id="@+id/spinnerToppings"
+        android:entries="@array/toppings" />
 
     <CheckBox
-        android:text="CheckBoxExtraCheese"
+        android:text="@string/checkboxextracheese"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/checkBoxCheese"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"
+        tools:text="Extra Cheese" />
 
     <Button
-        android:text="Order"
+        android:text="@string/order"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonOrder"
         android:onClick="onClickOrder" />
 
     <CheckBox
-        android:text="checkboxdelivery"
+        android:text="@string/checkboxdelivery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBoxDeluvery" />
+        android:id="@+id/checkBoxDeluvery"
+        tools:text="Delivery" />
 
     <TextView
-        android:text="Total Due:"
+        android:text="@string/total_due"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewTotal" />
+        android:id="@+id/textViewTotal"
+        android:lineSpacingExtra="8sp" />
 
     <TextView
-        android:text="Order Status: Nothing ordered yet"
+        android:text="@string/order_status_nothing_ordered_yet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewStatus" />
